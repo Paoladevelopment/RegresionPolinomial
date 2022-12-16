@@ -15,7 +15,7 @@ root.resizable(0,0)
 main_frame= tk.Frame(root, bg='#feebdd')
 main_frame.pack(fill=tk.BOTH, expand=True)
 #Imagen de fondo
-imagen= ImageTk.PhotoImage(Image.open('fondo_app.jpg'))
+imagen= ImageTk.PhotoImage(Image.open('img/fondo_app.jpg'))
 labelImagenFondo= tk.Label(main_frame, image=imagen, border=0).place(x=0, y=50)
 
 #Titulo ventana
@@ -27,11 +27,11 @@ titulo= tk.Label(main_frame, text= "Mínimos cuadrados", font=('Cooper Black', 2
 def cambiar_pag():
   bt.nueva_ventana(main_frame)
 
-semiround_basic= ImageTk.PhotoImage(file= 'boton_basico.png')
+semiround_basic= ImageTk.PhotoImage(file= 'img/boton_basico.png')
 boton_basico= tk.Button(main_frame, image=semiround_basic, border=0, bg='#feebdd', activebackground='#feebdd', cursor="hand2 #ffffff", command=cambiar_pag).place(x=240,y=270)
 
 #Btn salir
-semiround_salir= ImageTk.PhotoImage(file= 'boton_salir.png')
+semiround_salir= ImageTk.PhotoImage(file= 'img/boton_salir.png')
 boton_pro= tk.Button(main_frame, image=semiround_salir, border=0, bg='#feebdd', activebackground='#feebdd', cursor="hand2 #ffffff", command=root.destroy).place(x=240,y=380)
 
 

@@ -31,7 +31,7 @@ def nueva_ventana(main_frame):
   label_datos.place(x= 160, y=5)
 
   #imagen selección archivo
-  imagen_withoutresize= (Image.open('folder.png'))
+  imagen_withoutresize= (Image.open('img/folder.png'))
   resized_image= imagen_withoutresize.resize((80, 80))
   upload= ImageTk.PhotoImage(resized_image)
 
@@ -152,7 +152,7 @@ def nueva_ventana(main_frame):
   boton_grafica.place(x= 750, y=55)
 
   #Boton para devolverse
-  imagen_withoutresize= (Image.open('flecha_atras.png'))
+  imagen_withoutresize= (Image.open('img/flecha_atras.png'))
   resized_image= imagen_withoutresize.resize((80, 80))
   upload1= ImageTk.PhotoImage(resized_image)
   btn= tk.Button(page_tab, image=upload1,bg='#f4e39d', activebackground='#f4e39d', cursor='hand2 #ffffff',border=0, command= lambda: devolver_pag_principal(page_tab))
